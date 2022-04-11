@@ -10,8 +10,6 @@ export default function Menu() {
 
     const userLogin = JSON.parse(localStorage.getItem(USER_LOGIN));
 
-    console.log(userLogin);
-
     const content = (
         <div>
             userName: {userLogin.name} <br/>

@@ -48,7 +48,7 @@ export default function TableMember(props) {
     ];
 
     function onChange(pagination, filters, sorter, extra) {
-        console.log('params', pagination, filters, sorter, extra);
+        
     }
 
     return (

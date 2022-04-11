@@ -74,7 +74,6 @@ function* SignUpSagaApi(action) {
             type: HIDE_LOADING
         });
 
-        console.log(action.data)
         let { status } = yield call(() => LoginService.signUp(action.data));
 
         if (status === 200) {

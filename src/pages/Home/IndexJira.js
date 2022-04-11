@@ -17,8 +17,6 @@ export default function IndexJira() {
     const dispatch = useDispatch();
     const projectDetail = useSelector(state => state.ProjectReducer.projectDetail);
 
-    // console.log(projectDetail);
-
     return (
         <div className="main">
             <HeaderMain name={projectDetail.projectName} />

@@ -120,7 +120,6 @@ const TaskReducer = (state = stateDefault, action) => {
             return {...state}
         }
         case 'REMOVE_ASSIGN': {
-            console.log(action.id)
             state.modalContent.assigness.forEach((item, index, arrayAssign) => {
                 if(item.id === action.id) {
                     arrayAssign.splice(index, 1);

@@ -66,7 +66,6 @@ export function* TheoDoiGetAllUser() {
 }
 
 function* createTaskApi(action) {
-    console.log(action)
     try {
         const { data, status } = yield call(() => TaskService.createTask(action.data))
         if (status === STATUS_CODE.SUCCESS) {

@@ -70,7 +70,7 @@ function* createProjectApi(action) {
         let { data, status } = yield call(() => ProjectService.createProjectAuthorization(action.data));
 
         if (status === 200) {
-            navigate('/');
+            navigate('/home');
             success('Tạo thành công');
             yield put({
                 type: PROJECT_MANAGEMENT_SAGA

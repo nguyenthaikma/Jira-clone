@@ -9,11 +9,13 @@ import { Editor } from '@tinymce/tinymce-react';
 import { useDispatch, useSelector } from 'react-redux'
 import './Home.css'
 import { _CREATE_PROJECT_SAGA, _GET_CATEGORY } from '../../redux/actions/ProjectAction'
+import { USER_LOGIN } from '../../util/constatnts/System';
 
 
 export default function CreateProject() {
     const { Option } = Select;
 
+    const userLogin = JSON.parse(localStorage.getItem(USER_LOGIN))
 
     let category = useSelector(state => state.ProjectReducer.category);
     let dispatch = useDispatch();
@@ -45,7 +47,7 @@ export default function CreateProject() {
             <div className="create-head">
                 Projects
                 <span className="create-space">/</span>
-                singularity 1.0
+                {userLogin.name}
                 <span className="create-space">/</span>
                 Create Project
             </div>
