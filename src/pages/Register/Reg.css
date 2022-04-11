@@ -1,0 +1,16 @@
+.reg-header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.reg-btn {
+    background-color: #6675df !important;
+    width: 100%;
+}
+
+.reg-form > * {
+    margin-bottom: 20px !important;
+}

@@ -1,0 +1,27 @@
+.sub-label {
+    color: rgb(94, 108, 132);
+    font-size: 12px !important;
+    font-weight: 400;
+}
+
+.sub-label.active {
+    position: relative;
+    bottom: 6px;
+}
+
+.create-container {
+    margin-top: 12px;
+}
+
+.create-simple {
+    margin-bottom: 12px;
+    border-top: 1px solid rgb(223, 225, 230);
+}
+
+.ant-input-number {
+    width: 140px !important;
+}
+
+.ant-slider {
+    margin-top: 0 !important;
+}

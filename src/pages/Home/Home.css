@@ -1,0 +1,61 @@
+.create-wrap {
+    width: 100%;
+    height: fit-content !important;
+    padding: 25px 160px 50px;
+    margin-left: 294px;
+}
+
+.create-head {
+    color: rgb(94, 108, 132);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.create-space {
+    margin: 0 10px;
+}
+
+.create-heading {
+    padding: 6px 0px 15px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(23, 43, 77);
+}
+
+.create-label {
+    margin-top: 4px;
+    margin-bottom: 5px;
+    color: rgb(94, 108, 132);
+    font-size: 13px;
+}
+
+.create-btn {
+    margin-top: 16px;
+    display: inline-flex ;
+    align-items: center ;
+    justify-content: center ;
+    height: 32px ;
+    vertical-align: middle ;
+    line-height: 1 ;
+    padding: 0px 12px !important;
+    border-radius: 3px !important;
+    transition: all 0.1s ease 0s ;
+    cursor: pointer;
+    user-select: none !important;
+    font-size: 14.5px ;
+    color: rgb(255, 255, 255) ;
+    background: rgb(0, 82, 204) !important;
+}
+
+.create-under {
+    padding-top: 6px;
+    color: rgb(94, 108, 132);
+    font-size: 12.5px;
+}
+
+.tox-statusbar {
+    display: none !important; 
+}
+
+
+

@@ -1,0 +1,74 @@
+.login-header {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+.login-input {
+    width: 80% !important;
+    border-radius: 20px !important;
+    margin-top: 20px;
+}
+
+.login-input::placeholder {
+    color: #999999 !important;
+}
+
+.login-btn {
+    width: 80%;
+    background-color: rgb(102, 117, 223) !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+}
+
+.login-group {
+    text-align: left !important;
+    width: 80% !important;
+    margin-top: 12px !important;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-group a,
+.login-register {
+    color: #000;
+}
+
+.login-group a:hover,
+.login-register:hover {
+    color: rgb(102, 117, 223);
+}
+
+
+
+.login-checkbox {
+    color: #999999 !important;
+    font-size: 13px !important;
+}
+
+.login-mid {
+    margin-top: 30px;
+    margin-bottom: 16px;
+    color: #999;
+}
+
+.login-social {
+    display: flex;
+    justify-content: center;
+}
+
+.login-social * {
+    margin: 0 4px;
+}
+
+.login-img {
+    object-fit: cover;
+}
+
+#ant-form-item-explain-error {
+    float: left;
+    width: 80%;
+    text-align: left !important;
+}
