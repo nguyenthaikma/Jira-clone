@@ -38,7 +38,7 @@ function App() {
         <Route path='/' element={<UserLoginTemplate data={Login} />} />
         <Route path='/register' element={<UserLoginTemplate data={Register} />} />
         <Route path='/projectDetail/:id' element={<HomTemplate data={IndexJira} />} />
-        <Route path='*' element={<HomTemplate data={ProjectManagament} />} />
+        <Route path='*' element={<UserLoginTemplate data={Login} />} />
       </Routes>
     </>
   );

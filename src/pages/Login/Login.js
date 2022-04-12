@@ -54,7 +54,7 @@ function Login(props) {
                     <Checkbox className="login-checkbox" >Remember me</Checkbox>
                     <a href="/">Forgot Password?</a>
                 </div>
-                <Button htmlType="submit" size='large' className="login-btn mt-4">Đăng nhập</Button>
+                <Button htmlType="submit" size='large' className="login-btn mt-4">Login</Button>
             </Form>
             <Link className="text-center d-block mt-3 login-register" to="/register">Register now?</Link>  
             <p className="login-mid text-center">or sign up using</p>

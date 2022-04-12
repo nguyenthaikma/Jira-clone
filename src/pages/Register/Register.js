@@ -51,7 +51,7 @@ export default function Register() {
 
     return (
         <div className="container">
-            <h3 className="reg-header">Sign in to continue</h3>
+            <h3 className="reg-header">Sign up to continue</h3>
             <Form
                 className="reg-form"
                 name="register"
@@ -179,7 +179,7 @@ export default function Register() {
                 </Form.Item>
                 <Form.Item >
                     <Button className="reg-btn" type="primary" htmlType="submit">
-                        Register
+                        Sign up
                     </Button>
                 </Form.Item>
             </Form>

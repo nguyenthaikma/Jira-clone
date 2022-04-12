@@ -6,6 +6,7 @@ import { FlagOutlined, ClockCircleOutlined } from '@ant-design/icons';
 import { _ADD_COMMENT_SAGA, _DELETE_COMMENT_SAGA, _DELETE_TASK_SAGA, _GET_ALL_COMMENT_SAGA, _UPDATE_STATUS_SAGA } from '../../redux/actions/TaskActions';
 import { Editor } from '@tinymce/tinymce-react';
 import { CHANG_MODAL_CONTENT_SAGA } from '../../redux/constants/TaskConstant';
+import { USER_LOGIN } from '../../util/constatnts/System';
 
 const { Option } = Select;
 
@@ -14,6 +15,8 @@ const warning = (content) => {
 };
 
 export default function InfoModal() {
+
+    const userLogin = JSON.parse(localStorage.getItem(USER_LOGIN));
 
     const dispatch = useDispatch();
     let { modalContent, status, priority, type } = useSelector(state => state.TaskReducer);
@@ -153,6 +156,7 @@ export default function InfoModal() {
                                             <div>
                                                 <div onClick={() => {
                                                     dispatch({ type: 'CLOSE_EDIT_NAME' })
+                                                    
                                                 }} className="input-name__overlay"></div>
                                                 <Input onChange={(event) => {
                                                     dispatch({
@@ -216,7 +220,7 @@ export default function InfoModal() {
                                         <h6 style={{ color: 'rgb(23, 43, 77)' }}>Comment</h6>
                                         <div className="block-comment" style={{ display: 'flex' }}>
                                             <div className="avatar">
-                                                <img src={require('../../assets/img/item1.jfif')} alt="1" />
+                                                <img src={userLogin.avatar} alt="1" />
                                             </div>
                                             <div className="input-comment">
                                                 <input
@@ -239,7 +243,7 @@ export default function InfoModal() {
                                                         style={{ fontSize: '16px' }}
                                                         className="task-title save"
                                                     >
-                                                        Save
+                                                        Send
                                                     </div>
                                                 </div>
                                             </div>
@@ -247,9 +251,9 @@ export default function InfoModal() {
                                         <div className="lastest-comment mt-2">
                                             <div className="comment-item">
                                                 {lstComment.map((item, index) => {
-                                                    return (<div key={index} className="display-comment" style={{ display: 'flex' }}>
+                                                    return (<div key={index} className="display-comment mt-2" style={{ display: 'flex' }}>
                                                         <div className="avatar">
-                                                            <img src={require('../../assets/img/item1.jfif')} alt={index} />
+                                                            <img src={item.avatar} alt={index} />
                                                         </div>
                                                         <div>
                                                             <div className="d-flex">
