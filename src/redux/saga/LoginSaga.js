@@ -108,7 +108,6 @@ function* getUserApi(action) {
             yield put(_GET_USER(data.content))
         }
     } catch (err) {
-        console.log(err.response);
     }
 }
 
@@ -125,7 +124,6 @@ function* assignUserProject(action) {
             })
         }
     } catch (err) {
-        console.log(err.response)
         error(err.response.data.message);
     }
 }

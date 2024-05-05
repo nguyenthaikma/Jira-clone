@@ -29,7 +29,6 @@ export function * rootSaga() {
         TaskSaga.TheoDoiAddComment(),
         TaskSaga.TheoDoiDeleteComment(),
         TaskSaga.TheoDoiDeleteTask(),
-        
     ])
     
 }

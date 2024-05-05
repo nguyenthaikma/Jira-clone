@@ -22,7 +22,6 @@ function* getAllTaskApi(action) {
             yield put(_GET_ALL_TASK(data.content))
         }
     } catch (err) {
-        console.log(err.response)
         error(err.response)
     }
 }
@@ -39,7 +38,6 @@ function* getPriority() {
         }
 
     } catch (err) {
-        console.log(err.response)
         error(err.response)
     }
 }
@@ -56,7 +54,6 @@ function* getAllUser(action) {
         }
 
     } catch (err) {
-        console.log(err.response)
         error(err.response)
     }
 }
@@ -79,7 +76,6 @@ function* createTaskApi(action) {
             })
         }
     } catch (err) {
-        console.log(err)
         error(err?.response);
     }
 }
@@ -95,7 +91,6 @@ function* getStatus() {
             yield put(_GET_STATUS(data.content));
         }
     } catch (err) {
-        console.log(err.response)
     }
 }
 
@@ -110,7 +105,6 @@ function* getTaskDetail(action) {
             yield put(_GET_TASK_DETAIL(data.content));
         }
     } catch (err) {
-        console.log(err.response)
     }
 }
 
@@ -129,7 +123,6 @@ function* updateStatus(action) {
             });
         }
     } catch (err) {
-        console.log(err.response)
     }
 }
 
@@ -147,7 +140,6 @@ function* getAllComment(action) {
             });
         }
     } catch (err) {
-        console.log(err.response)
     }
 }
 
@@ -162,7 +154,6 @@ function* addComment(action) {
             yield put(_GET_TASK_DETAIL_SAGA(action.data.taskId));
         }
     } catch (err) {
-        console.log(err.response)
     }
 }
 
@@ -177,7 +168,6 @@ function* deleteComment(action) {
             yield put(_GET_TASK_DETAIL_SAGA(action.data.taskId));
         }
     } catch (err) {
-        console.log(err.response)
     }
 }
 
@@ -195,7 +185,6 @@ function* deleteTask(action) {
             });
         }
     } catch (err) {
-        console.log(err)
     }
 }
 
@@ -289,8 +278,6 @@ function* handleChangModalContent(action) {
             });
         }
     } catch (err) {
-        console.log(err?.response);
-        console.log(err)
     }
 }
 

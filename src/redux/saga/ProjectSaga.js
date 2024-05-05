@@ -25,7 +25,6 @@ function* getProjectApi(action) {
             data: data.content
         })
     } catch (err) {
-        console.log(err);
     }
 }
 
@@ -127,7 +126,6 @@ function* editProjectApi(action) {
             })
         }
     } catch (err) {
-        console.log(err)
     }
 }
 
@@ -147,7 +145,6 @@ function* deleteProject(action) {
             })
         }
     } catch (err) {
-        console.log(err.response);
     }
 }
 
@@ -165,7 +162,6 @@ function* removeUserApi(action) {
             success(data.message);
         }
     } catch (err) {
-        console.log(err.response)
         error(err.response.data.message);
     }
 }
@@ -181,7 +177,6 @@ function* getProjectDetailApi(action) {
             yield put(_GET_PROJECT_DETAIL(data.content));
         }
     } catch (err) {
-        console.log(err.response);
     }
 }
 
